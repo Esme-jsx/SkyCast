@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --main-color: rgba(220, 220, 220, 0.6);
+  --main-color: #FFF;
 }
 
 * {
@@ -11,7 +11,7 @@
 }
 
 body {
-  background: url("../images/background.jpg");
+  background: url("../images/background-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   /*width: 100%;
@@ -60,7 +60,6 @@ footer {
   justify-content: center;
   font-size: 20px;
   grid-area: footer;
-  color: #000;
 }
 
 main .weather-app-data {
@@ -82,7 +81,7 @@ main .date-and-forecast-container {
 }
 
 main h1.weather-app-city {
-  font-weight: 200;
+  font-weight: 250;
   font-size: 90px;
 }
 
@@ -91,7 +90,7 @@ main h1.current-temp {
 }
 
 main p.current-forecast {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 form.search-form {
@@ -119,7 +118,7 @@ form input.search-form-btn {
   font-size: 16px;
   margin-left: 10px;
   border-radius: 6px;
-  color: white;
+  color: var(--main-color);
   cursor: pointer;
   transition: #333 200ms ease-in-out;
 }
@@ -130,5 +129,5 @@ form .search-form-btn:hover {
 
 a,
 a:visited {
-  color: #000;
+  color: var(--main-color);
 }
