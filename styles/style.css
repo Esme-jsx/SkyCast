@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --main-color: #fff;
-
+  --main-color: rgba(220, 220, 220, 0.6);
 }
 
 * {
@@ -26,6 +25,7 @@ body {
 .container {
   display: grid;
   height: 100vh;
+  margin-top: 25px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 4fr 1fr;
   grid-template-areas:
@@ -58,5 +58,77 @@ section {
 footer {
   display: flex;
   justify-content: center;
+  font-size: 20px;
   grid-area: footer;
+  color: #000;
+}
+
+main .weather-app-data {
+  display: flex;
+  align-items: center;
+  margin-left: 400px;
+}
+
+main .city-and-temp-container {
+  margin-right: 20px;
+}
+
+main .date-and-forecast-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  margin-top: 90px;
+  font-weight: 400;
+}
+
+main h1.weather-app-city {
+  font-weight: 200;
+  font-size: 90px;
+}
+
+main h1.current-temp {
+  font-size: 130px;
+}
+
+main p.current-forecast {
+  font-size: 20px;
+}
+
+form.search-form {
+  display: flex;
+}
+
+form input.search-form-input {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 6px;
+  width: 400px;
+  font-size: 16px;
+  padding: 15px 20px;
+  outline: none;
+}
+
+form input.search-form-input:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+form input.search-form-btn {
+  background: #000;
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: #333 200ms ease-in-out;
+}
+
+form .search-form-btn:hover {
+  opacity: 0.5;
+}
+
+a,
+a:visited {
+  color: #000;
 }
