@@ -8,65 +8,42 @@
     <title>SkyCast</title>
   </head>
   <body>
-    <div class="container">
+    <div class="weather-app">
       <header>
         <form class="search-form" id="search-form">
           <input
-            id="search-form-input"
-            class="search-form-input"
             type="search"
-            placeholder="Enter a city"
+            id="search-form-input"
+            placeholder="Enter a city..."
+            class="search-form-input"
             required
           />
-          <input class="search-form-btn" type="submit" value="Search" />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
         <div class="weather-app-data">
-          <div class="city-and-temp-container">
-            <h1 class="weather-app-city" id="city">Paris</h1>
-            <h1 class="current-temp" id="current-temp">14&deg;</h1>
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>, <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
           </div>
-
-          <div class="date-and-forecast-container">
-            <p class="current-date">Tuesday, 28</p>
-            <p class="current-date">May</p>
-            <p class="current-forecast">Drizzle</p>
+          <div class="weather-app-temperature-container">
+            <div id="icon">
+              <!--<img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+              />-->
+            </div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">&deg;F</div>
           </div>
         </div>
-      </main>
-      <section>Forecast Section</section>
+    </div>
       <footer>
-        <!--<p>
-          This project was coded by
-          <strong
-            ><a
-              href="https://github.com/Esme-jsx/"
-              target="_blank"
-              alt="Github profile"
-              >Esme</a
-            ></strong
-          >
-          on
-          <strong
-            ><a
-              href="https://github.com/Esme-jsx/SkyCast"
-              target="_blank"
-              alt="SkyCast repo"
-              >Github</a
-            ></strong
-          >
-          and is hosted on
-          <strong
-            ><a
-              href="https://weather-app-skycast.netlify.app/"
-              target="_blank"
-              alt="Netlify URL"
-              >Netlify</a
-            ></strong
-          >.
-        </p> -->
-
         <div class="socials">
           <a href="https://github.com/Esme-jsx/SkyCast">
             <img src="images/github_logo.png" alt="Github Repo" />

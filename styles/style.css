@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --main-color: rgba(220, 220, 220, 0.8);
-}
+  --main-color: #FFF;/*rgba(220, 220, 220, 0.8);*/
 
 * {
   margin: 0;
@@ -22,113 +21,85 @@ body {
   color: var(--main-color);
 }
 
-.container {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 4fr 1fr;
-  grid-template-areas:
-    "header header"
-    "main section"
-    "footer footer";
+.weather-app {
+  background: transparent;
+  max-width: 700px;
+  margin: 250px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
+  padding: 50px;
+  align-items: center;
+ 
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: header;
-}
-main {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  grid-area: main;
-}
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: section;
+  padding: 0 0 30px 0;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  font-size: 15px;
-  grid-area: footer;
-}
-
-main .weather-app-data {
-  display: flex;
-  align-items: center;
-  margin-left: 400px;
-}
-
-main .city-and-temp-container {
-  margin-right: 20px;
-}
-
-main .date-and-forecast-container {
-  display: flex;
-  flex-direction: column;
-  font-size: 30px;
-  margin-top: 90px;
-  font-weight: 400;
-}
-
-main h1.weather-app-city {
-  font-weight: 250;
-  font-size: 90px;
-}
-
-main h1.current-temp {
-  font-size: 130px;
-}
-
-main p.current-forecast {
-  font-size: 25px;
-}
-
-form.search-form {
-  display: flex;
-}
-
-form input.search-form-input {
-  background-color: var(--main-color);
+.search-form-input {
+  background-color: #f9f7fe;
   border: none;
+  width: 80%;
   border-radius: 6px;
-  width: 400px;
-  font-size: 16px;
+  padding: 20px;
   padding: 15px 20px;
-  outline: none;
+  font-size: 16px;
 }
 
-form input.search-form-input:focus {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-form input.search-form-btn {
+.search-form-button {
   background: #000;
   padding: 15px 30px;
   border: none;
-  font-size: 16px;
-  margin-left: 10px;
+  margin-left: 5px;
   border-radius: 6px;
-  color: var(--main-color);
-  cursor: pointer;
-  transition: #333 200ms ease-in-out;
+  color: white;
+  font-size: 16px;
 }
 
-form .search-form-btn:hover {
-  opacity: 0.5;
+main {
+  padding: 30px 0;
 }
 
-a,
-a:visited {
-  color: var(--main-color);
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-app-city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+.weather-app-details {
+  font-size: 16px;
+  color: rgba(39, 33, 66, 0.4);
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.weather-app-details strong {
+  color: #f65282;
+}
+
+.weather-app-temperature-container {
+  display: flex;
+}
+
+.weather-app-icon {
+  width: 88px;
+  height: 88px;
+}
+
+.weather-app-temperature {
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: bold;
+}
+
+.weather-app-unit {
+  margin-top: 6px;
+  font-size: 28px;
 }
 
 .socials {
