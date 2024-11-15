@@ -47,8 +47,8 @@ function searchCity(city) {
   axios.get(apiUrl).then(refreshWeather);
 }
 
-function handleSearchSubmit(event) {
-  event.preventDefault();
+function handleSearchSubmit(e) {
+  e.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
 
   searchCity(searchInput.value);
