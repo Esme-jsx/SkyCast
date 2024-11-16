@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --main-color: #FFF;/*rgba(220, 220, 220, 0.8);*/
+  --main-color: #fff; /*rgba(220, 220, 220, 0.8);*/
 }
 
 * {
@@ -11,7 +11,7 @@
 }
 
 body {
-  background: url("../images/background.jpeg");
+  background: url("../images/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   /*width: 100%;
@@ -22,15 +22,18 @@ body {
   color: var(--main-color);
 }
 
+video {
+  width: 100%;
+}
+
 .weather-app {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.5);
   max-width: 700px;
-  margin: 250px auto;
+  margin: 150px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
   padding: 50px;
   align-items: center;
- 
 }
 
 header {
@@ -45,6 +48,7 @@ header {
   padding: 20px;
   padding: 15px 20px;
   font-size: 16px;
+  outline: none;
 }
 
 .search-form-button {
@@ -74,7 +78,7 @@ main {
 
 .weather-app-details {
   font-size: 16px;
-  color: rgba(39, 33, 66, 0.4);
+  color: #fff;
   line-height: 24px;
   font-weight: 500;
 }
@@ -121,7 +125,6 @@ main {
   height: 88px;
   display: block;
   margin: 0 auto;
-
 }
 
 .weather-forecast-temperatures {
